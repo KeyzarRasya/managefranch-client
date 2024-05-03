@@ -59,7 +59,7 @@ export default function ThirdPage(){
                 </div>
             </div>
             <div className="h-screen w-3/6 flex justify-center items-center">
-                <div className="h-5/6 w-4/6 img">
+                <div className=" h-60 w-60 md:h-5/6 md:w-4/6 img">
                     
                 </div>
             </div>

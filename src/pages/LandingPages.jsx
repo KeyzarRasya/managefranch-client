@@ -12,7 +12,7 @@ export default function LandingPages(){
     return (
         <>
         <div className="h-screen w-screen flex flex-col justify-center items-center " style={style}>
-         <a href="" className="w-20 h-10 bg-orange-500 flex justify-center items-center absolute top-5 right-5 rounded-md text-white">
+         <a href="#pricing" className="w-20 h-10 bg-orange-500 flex justify-center items-center absolute top-5 right-5 rounded-md text-white">
                 <Typography>Join</Typography>
             </a>
 
@@ -28,7 +28,7 @@ export default function LandingPages(){
             fontWeight={'bold'} 
             color={'#FFF'} 
             sx={{wordSpacing:'0.2em'}}
-            className=" duration-1000 hover:-translate-y-5">
+            className=" duration-1000 hover:-translate-y-5 text-center">
                 manage your franchise by only one tools
             </Typography>
             
@@ -41,7 +41,7 @@ export default function LandingPages(){
                 focus on your bussiness and we'll do the rest
             </Typography>
 
-            <div className=" w-5/6 h-10 mt-10 flex justify-around items-center">
+            <div className=" md:w-5/6 md:h-10 mt-10 grid grid-cols-1 gap-4 md:flex md:justify-around md:items-center">
                 <Chip label='financial statement records' color={'secondary'} sx={{fontSize:'1em', color:'#FFF'}}/>
                 <Chip label='allowing franchise to order from you' color={'secondary'} sx={{fontSize:'1em', color:'#FFF'}}/>
                 <Chip label='create automated financial reports' color={'secondary'} sx={{fontSize:'1em', color:'#FFF'}}/>

@@ -7,7 +7,7 @@ export default function Cards({isHigh, pricingBefore, pricingAfter}){
         backgroundColor:'#041C32'
     }
     return(
-        <div className="shadow-2xl h-3/6 hover:shadow-xl w-4/12 rounded-xl p-5 flex flex-col items-center duration-500 hover:shadow-white hover:-translate-y-3" style={bgStyle}>
+        <div className="shadow-2xl h-3/6 hover:shadow-xl md:w-4/12 m-5 rounded-xl p-5 flex flex-col items-center duration-500 hover:shadow-white hover:-translate-y-3" style={bgStyle}>
             <div className="price flex">
                 <Typography
                 color={'#FFF'}
