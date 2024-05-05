@@ -35,16 +35,13 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <BrowserRouter>
-      <Routes>
-        <Route element={<LandingPages/>} path="/"/>
-      </Routes>
-      <Routes>
-        <Route element={<Signup/>} path="/signup"/>
-      </Routes>
-      <Routes>
-        <Route element={<Purchase/>} path="/purchase/:value"/>
-      </Routes>
+        <Routes>
+          <Route element={<LandingPages />} path="/" />
+          <Route element={<Signup />} path="/signup" />
+          <Route element={<Purchase />} path="/purchase/:value" />
+        </Routes>
       </BrowserRouter>
+
     </ThemeProvider>
 
   )
