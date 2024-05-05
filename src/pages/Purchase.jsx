@@ -3,7 +3,7 @@ import SendIcon from '@mui/icons-material/Send';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 export default function Purchase(){
     const style = {
@@ -48,7 +48,7 @@ export default function Purchase(){
                         </Typography>
                     </Grid>
                     <Grid item xs={6} mt={3}>
-                        <Button variant="contained" color="secondary" startIcon={<ArrowBackIcon/>} className=""><a href="http://localhost:5173/">Back</a></Button>
+                        <Button variant="contained" color="secondary" startIcon={<ArrowBackIcon/>} className=""><Link to={'/'}>Back</Link></Button>
                     </Grid>
                     <Grid item xs={6} mt={3}>
                         <Button disabled={!isEmailValid} variant="contained" color="secondary" endIcon={<SendIcon/>}><a href={paymentAddress}>Submit</a></Button>

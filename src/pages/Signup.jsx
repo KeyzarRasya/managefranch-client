@@ -3,6 +3,7 @@ import SendIcon from '@mui/icons-material/Send';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 export default function Signup(){
     const style = {
@@ -60,7 +61,7 @@ export default function Signup(){
                         </Typography>
                     </Grid>
                     <Grid item xs={6} mt={3}>
-                        <Button variant="contained" color="secondary" startIcon={<ArrowBackIcon/>} className="" ><a href="/">Back</a></Button>
+                        <Button variant="contained" color="secondary" startIcon={<ArrowBackIcon/>} className="" ><Link to={'/'}>Back</Link></Button>
                     </Grid>
                     <Grid item xs={6} mt={3}>
                         <Button onClick={submitOnClick} variant="contained" color="secondary" endIcon={<SendIcon/>}>Next</Button>
