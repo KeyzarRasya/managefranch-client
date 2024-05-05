@@ -1,6 +1,7 @@
 import { Button, Typography } from "@mui/material"
 import DoneIcon from '@mui/icons-material/Done';
 import CloseIcon from '@mui/icons-material/Close';
+import { Link } from "react-router-dom";
 
 
 export default function Cards({isHigh, pricingBefore, pricingAfter}){
@@ -52,10 +53,10 @@ export default function Cards({isHigh, pricingBefore, pricingAfter}){
             </Typography>
             <div className="w-4/6 flex justify-center items-center mt-7" id="pricing">
                 <Button variant="contained" color="secondary">
-                    <a href={`https://managefranch-client.vercel.app/purchase/${price}`}>
+                    <Link to={`/purchase/${price}`}>
+                        <Typography color={'#FFF'}>Get ManageFranch</Typography>
+                    </Link>
 
-                    <Typography color={'#FFF'}>Get ManageFranch</Typography>
-                    </a>
                 </Button>
             </div>
         </div>
