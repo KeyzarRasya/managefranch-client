@@ -2,6 +2,7 @@ import { Button, Typography } from "@mui/material"
 import DoneIcon from '@mui/icons-material/Done';
 import CloseIcon from '@mui/icons-material/Close';
 
+
 export default function Cards({isHigh, pricingBefore, pricingAfter}){
     const bgStyle = {
         backgroundColor:'#041C32'
@@ -51,7 +52,7 @@ export default function Cards({isHigh, pricingBefore, pricingAfter}){
             </Typography>
             <div className="w-4/6 flex justify-center items-center mt-7" id="pricing">
                 <Button variant="contained" color="secondary">
-                    <a href={`http://localhost:5173/purchase/${price}`}>
+                    <a href={`https://managefranch-client.vercel.app/purchase/${price}`}>
 
                     <Typography color={'#FFF'}>Get ManageFranch</Typography>
                     </a>
