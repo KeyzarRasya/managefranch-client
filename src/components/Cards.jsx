@@ -6,8 +6,9 @@ export default function Cards({isHigh, pricingBefore, pricingAfter}){
     const bgStyle = {
         backgroundColor:'#041C32'
     }
+    const price = isHigh? '50000' : '30000'
     return(
-        <div className="shadow-2xl h-3/6 hover:shadow-xl md:w-4/12 m-5 rounded-xl p-5 flex flex-col items-center duration-500 hover:shadow-white hover:-translate-y-3" style={bgStyle}>
+        <div className="shadow-2xl h-3/6 hover:shadow-lg md:w-4/12 m-5 rounded-xl p-5 flex flex-col items-center duration-500 hover:shadow-black hover:-translate-y-3" style={bgStyle}>
             <div className="price flex">
                 <Typography
                 color={'#FFF'}
@@ -50,7 +51,10 @@ export default function Cards({isHigh, pricingBefore, pricingAfter}){
             </Typography>
             <div className="w-4/6 flex justify-center items-center mt-7" id="pricing">
                 <Button variant="contained" color="secondary">
+                    <a href={`http://localhost:5173/purchase/${price}`}>
+
                     <Typography color={'#FFF'}>Get ManageFranch</Typography>
+                    </a>
                 </Button>
             </div>
         </div>

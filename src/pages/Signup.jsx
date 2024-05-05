@@ -5,6 +5,10 @@ import { useState } from "react";
 import axios from "axios";
 
 export default function Signup(){
+    const style = {
+        backgroundColor:'#082032'
+    }
+
     const [umkm, setUmkm] = useState({umkmName:'', pemilik:'', email:'', password:'', alamat:''})
 
     const dataOnChange = (e) => {
@@ -24,32 +28,42 @@ export default function Signup(){
         console.log(senddata);
     }
     return (
-        <div className="h-screen w-screen flex justify-center items-center bg-purple-50">
+        <div className="h-screen w-screen flex justify-center items-center bg-purple-50" >
             <div className='h-full w-7/12 flex flex-col items-center text-center p-5'>
-                <Typography variant="h3" className="mb-10" color='primary' marginBottom={5}>
+                <Typography variant="h3" className="mb-7" color='secondary' marginBottom={5}>
                     Signup
                 </Typography>
-                <Grid container spacing={2}>
+                <Grid container spacing={1}>
                     <Grid item xs={6}>
-                        <TextField style={{borderColor:'primary'}} fullWidth margin="normal" color="primary" name="umkmName" label="Nama UMKM" onChange={dataOnChange} variant="outlined"/>
+                        <TextField style={{borderColor:'white'}} fullWidth margin="normal" color="secondary" name="umkmName" label="Nama UMKM" onChange={dataOnChange} variant="outlined"/>
                     </Grid>
                     <Grid item xs={6}>
-                        <TextField fullWidth margin="normal" color="primary" name="pemilik" label="Nama Pemilik" onChange={dataOnChange} variant="outlined"/>
+                        <TextField fullWidth margin="normal" color="secondary" name="pemilik" label="Nama Pemilik" onChange={dataOnChange} variant="outlined"/>
                     </Grid>
                     <Grid item xs={12}>
-                        <TextField fullWidth margin="normal" color="primary" name="alamat" label="Alamat" onChange={dataOnChange} variant="outlined"/>
-                    </Grid>
-                    <Grid item xs={12}>
-                        <TextField fullWidth margin="normal" color="primary" name="email" label="Email" onChange={dataOnChange} variant="outlined"/>
-                    </Grid>
-                    <Grid item xs={12}>
-                        <TextField fullWidth margin="normal" color="primary" name="password" label="Password" type="password" onChange={dataOnChange} variant="outlined"/>
+                        <TextField fullWidth margin="normal" color="secondary" name="alamat" label="Alamat" onChange={dataOnChange} variant="outlined"/>
                     </Grid>
                     <Grid item xs={6}>
-                        <Button variant="contained" color="primary" startIcon={<ArrowBackIcon/>}>Back</Button>
+                        <TextField fullWidth margin="normal" color="secondary" name="email" label="Email" onChange={dataOnChange} variant="outlined"/>
                     </Grid>
                     <Grid item xs={6}>
-                        <Button onClick={submitOnClick} variant="contained" color="primary" endIcon={<SendIcon/>}>Submit</Button>
+                        <TextField fullWidth margin="normal" color="secondary" name="password" label="Password" type="password" onChange={dataOnChange} variant="outlined"/>
+                    </Grid>
+                    <Grid item xs={12}>
+                        <TextField required fullWidth margin="normal" color="secondary" name="Token" label="Token" variant="outlined"/>
+                    </Grid>
+                    <Grid item xs={12}>
+                        <Typography
+                        color={"secondary"}
+                        fontSize={15}>
+                            you can earn a token by purchasing our packages
+                        </Typography>
+                    </Grid>
+                    <Grid item xs={6} mt={3}>
+                        <Button variant="contained" color="secondary" startIcon={<ArrowBackIcon/>} className="" ><a href="/">Back</a></Button>
+                    </Grid>
+                    <Grid item xs={6} mt={3}>
+                        <Button onClick={submitOnClick} variant="contained" color="secondary" endIcon={<SendIcon/>}>Next</Button>
                     </Grid>
                 </Grid>
             </div>

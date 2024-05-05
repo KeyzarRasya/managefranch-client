@@ -2,7 +2,7 @@ import { Typography } from "@mui/material"
 
 export default function SecondPage(){
     const containerStyle = {
-        backgroundColor:'#082032'
+        backgroundColor:'#FBF9F1'
     }
     return (
         <div className="h-full w-screen flex justify-center text-center" style={containerStyle}>
@@ -24,7 +24,7 @@ export default function SecondPage(){
                 mt={15}
                 mb={10}
                 fontWeight={'regular'}
-                color={'#EEEEEE'}
+                color={'#082032'}
                 variant="h4">
                     "Kami percaya bahwa UMKM dapat menopang ekonomi negara,<br/> UMKM yang teroganisir dapat memberikan akselerasi bagi kelajuan ekonomi di indonesia"
                 </Typography>

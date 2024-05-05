@@ -3,6 +3,8 @@ import Signup from "./pages/Signup"
 import { createTheme } from "@mui/material"
 import { deepPurple, purple } from "@mui/material/colors"
 import LandingPages from "./pages/LandingPages"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Purchase from "./pages/Purchase"
 
 
 function App() {
@@ -31,9 +33,18 @@ function App() {
   })
 
   return (
-
     <ThemeProvider theme={theme}>
-      <LandingPages/>
+      <BrowserRouter>
+      <Routes>
+        <Route element={<LandingPages/>} path="/"/>
+      </Routes>
+      <Routes>
+        <Route element={<Signup/>} path="/signup"/>
+      </Routes>
+      <Routes>
+        <Route element={<Purchase/>} path="/purchase/:value"/>
+      </Routes>
+      </BrowserRouter>
     </ThemeProvider>
 
   )

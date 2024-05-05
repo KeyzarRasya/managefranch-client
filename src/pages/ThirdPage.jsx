@@ -5,7 +5,7 @@ import Buttons from '../components/Buttons'
 
 export default function ThirdPage(){
     const containerStyle = {
-        backgroundColor:'#082032'
+        backgroundColor:'#FBF9F1'
     }
     const imageStyle={
         
@@ -25,7 +25,7 @@ export default function ThirdPage(){
                     <Typography
                     mt={5}
                     fontWeight={'regular'}
-                    color={'#EEEEEE'}
+                    color={'#082032'}
                     variant='h5'>
                         1. Satu kali bayar untuk selamanya
                     </Typography>
@@ -33,7 +33,7 @@ export default function ThirdPage(){
                     <Typography
                     mt={1}
                     fontWeight={'regular'}
-                    color={'#EEEEEE'}
+                    color={'#082032'}
                     variant='h5'>
                         2. Ramah Pengguna
                     </Typography>
@@ -41,7 +41,7 @@ export default function ThirdPage(){
                     <Typography
                     mt={1}
                     fontWeight={'regular'}
-                    color={'#EEEEEE'}
+                    color={'#082032'}
                     variant='h5'>
                         3. Interaktif
                     </Typography>
@@ -49,7 +49,7 @@ export default function ThirdPage(){
                     <Typography
                     mt={1}
                     fontWeight={'regular'}
-                    color={'#EEEEEE'}
+                    color={'#082032'}
                     variant='h5'>
                         4. Terintegrasi
                     </Typography>
