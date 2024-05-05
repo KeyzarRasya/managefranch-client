@@ -4,6 +4,7 @@ import SecondPage from "./SecondPage"
 import Buttons from "../components/Buttons"
 import PricingPage from "./PricingPage"
 import Footer from "./Footer"
+import { Link } from "react-router-dom"
 
 export default function LandingPages(){
     const style = {
@@ -12,9 +13,9 @@ export default function LandingPages(){
     return (
         <>
         <div className="h-screen w-screen flex flex-col justify-center items-center " style={style}>
-         <a href="#pricing" className="w-20 h-10 bg-orange-500 flex justify-center items-center absolute top-5 right-5 rounded-md text-white">
-                <Typography>Join</Typography>
-            </a>
+         <Link to={'/signup'} className="w-20 h-10 bg-orange-500 flex justify-center items-center absolute top-5 right-5 rounded-md text-white">
+                <Typography>SignUp</Typography>
+            </Link>
 
             <Typography 
             className="absolute top-5 left-5" 
