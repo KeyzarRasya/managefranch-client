@@ -5,6 +5,7 @@ import { deepPurple, purple } from "@mui/material/colors"
 import LandingPages from "./pages/LandingPages"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Purchase from "./pages/Purchase"
+import FinishPayment from "./pages/FinishPayment"
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
           <Route element={<LandingPages />} path="/" />
           <Route element={<Signup />} path="/signup" />
           <Route element={<Purchase />} path="/purchase/:value" />
+          <Route element={<FinishPayment/>} path="/finish"/>
         </Routes>
       </BrowserRouter>
 
