@@ -38,7 +38,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route element={<LandingPages />} path="/" />
-          <Route element={<Signup />} path="/signup" />
+          <Route element={<Signup />} path="/signup/:token" />
           <Route element={<Purchase />} path="/purchase/:value" />
           <Route element={<FinishPayment/>} path="/finish"/>
         </Routes>

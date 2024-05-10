@@ -1,14 +1,12 @@
 import { Button, Grid, TextField, Typography } from "@mui/material"
 import SendIcon from '@mui/icons-material/Send';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 export default function Signup(){
-    const style = {
-        backgroundColor:'#082032'
-    }
+    const {token} = useParams();
 
     const [umkm, setUmkm] = useState({umkmName:'', pemilik:'', email:'', password:'', alamat:''})
 
@@ -51,7 +49,7 @@ export default function Signup(){
                         <TextField fullWidth margin="normal" color="secondary" name="password" label="Password" type="password" onChange={dataOnChange} variant="outlined"/>
                     </Grid>
                     <Grid item xs={12}>
-                        <TextField required fullWidth margin="normal" color="secondary" name="Token" label="Token" variant="outlined"/>
+                        <TextField required fullWidth margin="normal" color="secondary" name="Token" label="Token" value={token} variant="outlined"/>
                     </Grid>
                     <Grid item xs={12}>
                         <Typography

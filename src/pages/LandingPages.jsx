@@ -14,7 +14,7 @@ export default function LandingPages(){
         <>
         <div className="h-screen w-screen flex flex-col justify-center items-center " style={style}>
          <Link to={'/signup'} className="w-20 h-10 bg-orange-500 flex justify-center items-center absolute top-5 right-5 rounded-md text-white">
-                <Typography>SignUp</Typography>
+                <Typography>Login</Typography>
             </Link>
 
             <Typography 
