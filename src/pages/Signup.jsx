@@ -21,7 +21,7 @@ export default function Signup(){
     const submitOnClick = async () => {
         const senddata = await axios({
                 method:'post',
-                url:'http://localhost:3000/umkm/signup',
+                url:'https://managefranch-server2.vercel.app/umkm/signup',
                 data:umkm
             })
         console.log(senddata);
