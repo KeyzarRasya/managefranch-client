@@ -20,7 +20,7 @@ export default function Purchase(){
 
     const {value} = useParams();
 
-    const paymentAddress = `http://localhost:3000/umkm/purchase/${value}?email=${email}`
+    const paymentAddress = `https://managefranch-server2.vercel.app/umkm/purchase/${value}?email=${email}`
     return (
         <div className="h-screen w-screen flex justify-center items-center bg-purple-50" >
             <div className='h-full w-7/12 flex flex-col items-center text-center p-5'>
