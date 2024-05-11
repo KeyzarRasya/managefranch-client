@@ -7,8 +7,7 @@ import { Link, useParams } from "react-router-dom";
 
 export default function Signup(){
     const {token} = useParams();
-
-    const [umkm, setUmkm] = useState({umkmName:'', pemilik:'', email:'', password:'', alamat:'', token:''})
+    const [umkm, setUmkm] = useState({umkmName:'', pemilik:'', email:'', password:'', alamat:'', token:token})
 
     const dataOnChange = (e) => {
         const {name, value} = e.target;
@@ -49,7 +48,7 @@ export default function Signup(){
                         <TextField fullWidth margin="normal" color="secondary" name="password" label="Password" type="password" onChange={dataOnChange} variant="outlined"/>
                     </Grid>
                     <Grid item xs={12}>
-                        <TextField required fullWidth margin="normal" color="secondary" name="token" label="Token" value={token} variant="outlined" onChange={dataOnChange}/>
+                        <TextField required fullWidth margin="normal" color="secondary" name="token" label="Token" value={umkm.token} variant="outlined" onChange={dataOnChange}/>
                     </Grid>
                     <Grid item xs={12}>
                         <Typography
