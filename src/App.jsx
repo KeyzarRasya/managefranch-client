@@ -6,6 +6,7 @@ import LandingPages from "./pages/LandingPages"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Purchase from "./pages/Purchase"
 import FinishPayment from "./pages/FinishPayment"
+import Login from "./pages/Login"
 
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
           <Route element={<Signup />} path="/signup/:token" />
           <Route element={<Purchase />} path="/purchase/:value" />
           <Route element={<FinishPayment/>} path="/finish"/>
+          <Route element={<Login/>} path="/login"/>
         </Routes>
       </BrowserRouter>
 
